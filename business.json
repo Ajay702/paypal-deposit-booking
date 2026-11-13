@@ -1,0 +1,26 @@
+{
+  "name": "Glow Studio",
+  "tagline": "Hair · Nails · Brows",
+  "brandColor": "#7c3aed",
+  "currency": "USD",
+  "depositPercent": 25,
+  "minDepositCents": 1000,
+  "slotMinutes": 30,
+  "holdMinutes": 15,
+  "email": "frontdesk@glowstudio.example",
+  "hours": {
+    "mon": ["09:00", "18:00"],
+    "tue": ["09:00", "18:00"],
+    "wed": ["09:00", "18:00"],
+    "thu": ["09:00", "20:00"],
+    "fri": ["09:00", "20:00"],
+    "sat": ["10:00", "16:00"],
+    "sun": null
+  },
+  "services": [
+    { "id": "cut", "name": "Haircut & Style", "priceCents": 6500, "durationMin": 60 },
+    { "id": "color", "name": "Full Color", "priceCents": 14000, "durationMin": 120 },
+    { "id": "mani", "name": "Gel Manicure", "priceCents": 4500, "durationMin": 45 },
+    { "id": "brow", "name": "Brow Shape & Tint", "priceCents": 3000, "durationMin": 30 }
+  ]
+}

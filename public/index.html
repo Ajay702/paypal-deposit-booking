@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book an appointment</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main>
+    <header><h1 id="biz-name">Loading…</h1><p id="biz-tagline"></p></header>
+
+    <section>
+      <h2>1. Pick a service</h2>
+      <div id="services" class="grid"></div>
+    </section>
+
+    <section>
+      <h2>2. Pick a time</h2>
+      <input type="date" id="date">
+      <div id="slots" class="slots"><p class="muted">Choose a service first.</p></div>
+    </section>
+
+    <section>
+      <h2>3. Your details</h2>
+      <form id="details">
+        <input name="name" placeholder="Full name" required>
+        <input name="email" type="email" placeholder="Email" required>
+        <input name="phone" placeholder="Phone (optional)">
+      </form>
+    </section>
+
+    <section id="checkout">
+      <h2>4. Pay deposit</h2>
+      <p id="summary" class="muted">Select a service and time.</p>
+      <paypal-button id="paypal-button" type="pay" hidden></paypal-button>
+      <button id="demo-pay" hidden>Pay deposit (demo PayPal)</button>
+      <p id="status"></p>
+    </section>
+  </main>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

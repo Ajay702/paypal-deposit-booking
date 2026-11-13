@@ -1,0 +1,9 @@
+# Decision
+
+**Reel 1 — DfqUPg3Pdu3 (10-agent "heist crew").** A prompt-architecture idea: one mission file in a shared folder, an orchestrator agent, a planner, specialists (research, coding/computer use, deliverable builder, copywriter) and control agents (progress, token spend, file hygiene, fact-check). Interesting, but it's mostly persona prompts on top of a paid model, and "done" is vague, so it's hard to test whether it works. Usefulness 6/10, Buildability 5/10 (needs paid API keys, computer use is heavy), Clarity 4/10 (only roles are described, no real mechanics).
+
+**Reel 2 — DfoVY_XvsMn (AI talking-head videos).** Three photos plus a 29-second voice clip go through an MCP video-model connector to produce daily short-form videos. The real work happens inside a third-party video/voice-cloning service and a "skill file" the reel never shows. Usefulness 6/10, Buildability 2/10 (depends on a specific paid/closed MCP provider and a GPU-heavy model), Clarity 3/10 (the key skill file is withheld).
+
+**Reel 3 — DfnuOFrPiwa (deposit booking system with PayPal).** A white-label booking page where a customer picks a service and time slot and pays a deposit through PayPal JS SDK v6. The server creates and captures the order with the Orders API, a webhook moves the booking from pending to confirmed, confirmation emails go to the customer and the salon, and an admin panel shows bookings, deposits and the daily schedule. Usefulness 8/10 (no-shows cost small businesses money every day), Buildability 9/10 (free PayPal sandbox and official APIs, runs on a laptop), Clarity 8/10 (each step is spelled out).
+
+**Pick: Reel 3.** It solves a concrete, recurring money problem, uses only official and free-to-start APIs, and the reel describes the whole flow end to end. I built it as a small zero-framework Node app with a demo mode that fakes PayPal, so it runs right after cloning.

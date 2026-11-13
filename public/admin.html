@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bookings admin</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="wide">
+    <header><h1>Bookings</h1></header>
+    <section>
+      <h2>Daily schedule <input type="date" id="date"></h2>
+      <div id="stats" class="stats"></div>
+      <table><thead><tr><th>Time</th><th>Customer</th><th>Service</th><th>Deposit</th><th>Status</th></tr></thead>
+        <tbody id="day"></tbody></table>
+    </section>
+    <section>
+      <h2>All bookings</h2>
+      <table><thead><tr><th>Date</th><th>Time</th><th>Customer</th><th>Service</th><th>Deposit</th><th>Status</th><th>PayPal</th></tr></thead>
+        <tbody id="all"></tbody></table>
+    </section>
+  </main>
+  <script type="module" src="/admin.js"></script>
+</body>
+</html>

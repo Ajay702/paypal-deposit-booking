@@ -1,0 +1,18 @@
+{
+  "name": "deposit-booking",
+  "version": "1.0.0",
+  "description": "White-label booking page that takes a PayPal deposit and auto-confirms via webhook",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "demo": "node src/demo.js",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "nodemailer": "^10.5.0"
+  }
+}
